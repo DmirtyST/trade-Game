@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+
+import Home from "./components/Home/Home";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Layout from "./components/Layout";
+import BasketPage from "./components/BasketPage";
+import {ToastContainer, toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import SingleProduct from "./components/SingleProduct";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<ScrollToTop />
+			<ToastContainer />
+			<Routes>
+				<Route path="/" element={<Layout />}>
+					<Route index element={<Home />} />
+					<Route path="/basket" element={<BasketPage />} />
+					<Route path="/:title" element={<SingleProduct />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;

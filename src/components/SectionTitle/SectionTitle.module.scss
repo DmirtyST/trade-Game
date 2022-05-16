@@ -1,0 +1,23 @@
+.sectionTitle{
+  
+font-size: 32px;
+font-weight: 700;
+line-height: 37px;
+color: #363636;
+margin-bottom: 20px;
+text-align: start;
+}
+
+
+@media (max-width:475px) {
+   .sectionTitle{
+  
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 37px;
+      color: #363636;
+      margin-bottom: 20px;
+      text-align: start;
+      }
+      
+}

@@ -1,0 +1,121 @@
+.AsideMenu{
+   height: 100vh;
+   width: 30%;
+   background-color: white;
+   position: absolute;
+   left: -400%;
+   top: 81px;
+   z-index: 9999;
+   transition: all ease .4s;
+   padding: 35px 0;
+  
+   &::before{
+      content: '';
+      position: absolute;
+      right: -300%;
+      top: 0;
+      background-color: rgba( #000000,  0.6);
+      width: 300%;
+      height: 100%;
+   }
+
+   .AsideMenu_nav{
+      overflow: auto;
+      height: 100vh;
+      padding-bottom: 150px;
+   }
+   
+}
+
+.AsideMenuActive{
+   left: 0;
+   transition: all ease .4s;
+   
+}
+
+
+
+
+
+.AsideMenu_list{
+   .AsideMenu_list_list{
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 23px;
+     padding: 10px 35px;
+     display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:first-child{
+         background: #F9A43F;
+      }
+      i{
+         transition: all ease .4s;
+         font-size: 14px;
+      }
+   }  
+   .AsideMenu_list_listActive{
+      &:first-child{
+         
+         i{
+            
+            transform: rotate(90deg);
+         }
+      }
+   }
+   
+}
+
+.DropMenu{
+   padding: 15px;
+   height: auto;
+   display: none;
+  
+   transition: all ease .4s;
+  
+   .DropMenu_list{
+
+      li{
+         margin-bottom: 10px;
+
+         a{
+         color: black;
+         font-size: 16px;
+         font-weight: 700;
+         line-height: 40px;
+
+         }
+      }
+   }
+}
+
+.DropMenuActive{
+   display: block;
+   
+   transition: all ease-in-out .2s;
+}
+
+
+
+
+
+
+@media (max-width:930px) {
+   .AsideMenu{
+      width: 35%;
+   }
+}
+
+
+@media (max-width:670px) {
+   .AsideMenu{
+      width: 45%;
+   }
+}
+
+@media (max-width:476px) {
+   .AsideMenu{
+      width: 100%;
+   }
+}

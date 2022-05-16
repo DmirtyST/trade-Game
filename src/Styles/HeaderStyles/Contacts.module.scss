@@ -1,0 +1,27 @@
+.contacts{
+   display: flex;
+   align-items: center;
+   margin-right: 62px;
+  
+
+img{
+ width: 28px;
+ height: 27px;
+}  
+   a{
+color: white;
+font-size: 20px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 10px;
+   }
+ }
+
+ @media (max-width:1100px) {
+    .contacts{
+       position: absolute;
+       visibility: hidden;
+    }
+ }

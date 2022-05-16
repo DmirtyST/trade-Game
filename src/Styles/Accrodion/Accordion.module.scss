@@ -1,0 +1,52 @@
+.Accordion{
+   overflow: hidden;
+   width: 100%;
+   visibility: hidden;
+   position: absolute;
+   .Accordion_title{
+      background-color: rgb(74, 74, 74);
+      padding: 10px 15px;
+      font-size: 18px;
+      color: white;
+      transition: all ease .4s;
+      position: relative;
+      z-index: 22;
+      cursor: pointer;
+   }
+
+   .Accordion_titleActive{
+      background-color: #fa9634;
+      color: black;
+   }
+
+   .Accordion_body{
+      position: absolute;
+      left: -100%;
+      padding: 10px;
+      transition: all ease 1s;
+      opacity: 0;
+      li{
+         margin-bottom: 15px;
+      }
+   }
+
+   .Accordion_bodyActive{
+      display: block;
+      position: relative;
+      left: 0;
+      opacity: 1;
+      transition: all ease 0.4s;
+      li{
+         color: white;
+        
+      }
+   }
+
+}
+
+@media (max-width:1105px) {
+   .Accordion{
+      visibility: visible;
+      position: relative;
+   }
+}

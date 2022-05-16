@@ -1,0 +1,17 @@
+.subHeader_navSocial{
+ 
+   .list{
+     display: flex;
+     align-items: center;
+     li{
+       
+       &:first-child{
+         margin-left: 0;
+       
+
+         
+       }
+       margin-left: 11px;
+     }
+   }
+ }

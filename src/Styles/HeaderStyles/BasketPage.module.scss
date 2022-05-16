@@ -1,0 +1,168 @@
+.BasketPage{
+   padding: 50px 0;
+   min-height:60vh;
+   position: relative;
+   
+}
+.row{
+   position: relative;
+}
+.BasketPageNull{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translateX(-50%);
+   margin-top: 100px;
+   font-size: 45px;
+}
+
+.BasketPagePrice{
+   width: calc(34% - 30px);
+   height: 344px;
+   padding: 36px 31px;
+box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+border-radius: 9px;
+position: absolute; 
+right: 0;
+top: -60px;
+
+.form_controlls{
+   
+   span{
+      
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+
+
+   }
+   
+   input{
+      margin-top: 7px;
+      width: 100%;
+      height: 34px;
+      border: 1px solid rgba(42, 42, 42, 0.25);
+      border-radius: 9px;
+   }
+}
+
+.containerPrice{
+
+   
+   align-items: center;
+   margin-bottom: 18px;
+   font-size: 17px;
+   font-weight: 700;
+   line-height: 22px;
+   div{
+      &:first-child{
+         margin-bottom: 7px;
+      }
+   }
+   
+   p{
+     
+      
+      line-height: 38px;
+      margin-left: 5px;
+      
+   }
+}
+}
+
+.item{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 25px;
+  
+   width: calc(66% - 10px);
+
+   .box{
+      display: flex;
+      align-items: center;
+   }
+   .container_img{
+      width: 95px;
+      height: 95px;
+      overflow: hidden;
+      border-radius: 9px;
+      position: relative;
+      background-color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .image{
+         position: relative;
+         width: 90px;
+         height: 90px;
+      }
+      img{
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+
+   .names,.price{
+
+font-size: 22px;
+font-weight: 700;
+line-height: 26px;
+max-width: 350px;
+margin-left: 33px;
+
+   }
+   .names{
+      max-width: 250px;
+   }
+
+   .price{
+   
+     
+      margin-left: 0px;
+      margin-right: 35px;
+      text-align: end;
+     
+   }
+
+  
+} 
+
+.BasketIncrease{
+   display: flex;
+   align-items: center;
+   margin-left: 57px;
+   margin-right: 40px;
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 26px;
+   margin: 0 11px;
+   .BasketIncrease_title{
+     
+     
+      
+   }  
+
+   .BasketIncrease_remove,.BasketIncrease_add{
+     
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 26px;
+      margin: 0 11px;
+      
+     
+      
+      
+   }  
+   .BasketIncrease_remove{
+      font-size: 32px;
+   }
+   
+
+
+}
