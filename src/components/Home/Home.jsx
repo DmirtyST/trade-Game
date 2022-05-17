@@ -1,5 +1,6 @@
 /** @format */
 
+import ContainerBig from "../Container/ContainerBig/Index";
 import Container from "../Container/Index";
 import About from "./About";
 import AdditionalInformation from "./AdditionalInformation";
@@ -15,15 +16,19 @@ function Home() {
 	return (
 		<div className={styles.home}>
 			<SwipeProduct styles={styles} />
-			<Container>
-				<Catalog styles={styles} />
+			<ContainerBig>
+				<Container>
+					<Catalog styles={styles} />
+				</Container>
 				<ProductList styles={styles} />
-				<SpecialOffer styles={styles}></SpecialOffer>
-				<Events styles={styles} />
-				<AdditionalInformation styles={styles} />
-				<About styles={styles} />
-				<Contacts styles={styles} />
-			</Container>
+				<SpecialOffer styles={styles} />
+				<Container>
+					<Events styles={styles} />
+					<AdditionalInformation styles={styles} />
+					<About styles={styles} />
+					<Contacts styles={styles} />
+				</Container>
+			</ContainerBig>
 		</div>
 	);
 }

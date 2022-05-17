@@ -26,3 +26,18 @@ i{
    }
 }
 }
+
+@media (max-width:1350px) {
+   .buttonAdd{
+      padding: 7px 35px;  
+     background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+     border-radius: 9px;
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 19px;
+     color: #FFFFFF;
+     display: flex;
+      justify-content: space-between;
+
+   }
+}

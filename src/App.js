@@ -6,7 +6,7 @@ import Layout from "./components/Layout";
 import BasketPage from "./components/BasketPage";
 import {ToastContainer, toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import SingleProduct from "./components/SingleProduct";
+
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
@@ -18,7 +18,6 @@ function App() {
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
 					<Route path="/basket" element={<BasketPage />} />
-					<Route path="/:title" element={<SingleProduct />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

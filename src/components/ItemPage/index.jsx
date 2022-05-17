@@ -8,18 +8,13 @@ import styles from "./ItemPage.module.scss";
 function ItemPage(game) {
 	const {imagePath, players, time, age, title, price} = game;
 	const dispatch = useDispatch();
-	const historys = useNavigate();
 	const handleaddProducts = (e) => {
 		e.stopPropagation();
 		dispatch(addItems(game));
 	};
 
-	const handleNextPath = () => {
-		dispatch(nextPathGame(game));
-		historys(`/${game.title}`);
-	};
 	return (
-		<div className={styles.swiperSlide} onClick={handleNextPath}>
+		<div className={styles.swiperSlide}>
 			<div className={styles.box}>
 				<div className={styles.imgContainer}>
 					<img className={styles.imgProduct} src={imagePath} alt="" />

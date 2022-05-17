@@ -1,0 +1,32 @@
+
+.swiperProductsContainer{
+   position: relative;
+}
+
+
+.swiperSlideNext,.swiperSlidePrev{
+
+   display: inline-block;
+   position: absolute;
+   z-index: 55;
+   top: 42%;
+   transform: translateY(-50%);
+   cursor: pointer;
+   width: 25px;
+   height: 25px;
+   background: #2A2A2A;
+   border-radius: 50%;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 17px;
+
+}
+.swiperSlideNext{
+left: 15px;
+}
+.swiperSlidePrev{
+right: 15px;
+}
+

@@ -1,0 +1,27 @@
+
+.swiperProductsSlidePrev,.swiperProductsSlideNext{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 25px;
+   z-index: 33;
+   cursor: pointer;
+}
+
+
+
+.swiperProductsSlidePrev{
+right: 0px;
+}
+
+.swiperProductsSlideNext{
+left: 0px;
+
+}
+
+.SwiperProusctSlider{
+   position: relative;
+   padding: 0 75px;
+}
+
+

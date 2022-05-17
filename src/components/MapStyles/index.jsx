@@ -4,10 +4,6 @@ import {GoogleMap, Marker} from "@react-google-maps/api";
 import React, {useState} from "react";
 
 import {defaultTheme} from "./Theam";
-const containerStyle = {
-	width: `100%`,
-	height: "630px",
-};
 
 const defaultOptions = {
 	panControl: true,
@@ -35,6 +31,10 @@ export const MapStyles = ({center}) => {
 		mapRef.current = undefined;
 	}, []);
 
+	const containerStyle = {
+		width: `100%`,
+		height: "630px",
+	};
 	return (
 		<div className={style.contanerMap}>
 			<GoogleMap options={defaultOptions} mapContainerStyle={containerStyle} center={center} zoom={16} onLoad={onLoad} onUnmount={onUnmount}>

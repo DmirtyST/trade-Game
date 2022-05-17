@@ -1,12 +1,16 @@
 /** @format */
-
-import {sliderBeginningData} from "../../Data/data";
 import {Swiper, SwiperSlide} from "swiper/react";
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import SwiperCore, {Navigation, Pagination} from "swiper";
 import styles from "./SliderBeginning.module.scss";
 import {NavLink} from "react-router-dom";
-
+import {useRef} from "react";
+import "./SliderBeginning.scss";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faAngleRight, faAngleLeft} from "@fortawesome/free-solid-svg-icons";
+SwiperCore.use([Navigation, Pagination]);
 const SliderBeginningItem = (props) => {
 	const {imagePath, title, sub, path} = props;
 	return (
@@ -22,11 +26,13 @@ const SliderBeginningItem = (props) => {
 		</div>
 	);
 };
-
+<FontAwesomeIcon />;
 function SliderBeginning(props) {
 	const {items = []} = props;
+	const navigationPrevRef = useRef(null);
+	const navigationNextRef = useRef(null);
 	return (
-		<div>
+		<div className={"swiperShowProducts"}>
 			<Swiper
 				breakpoints={{
 					320: {
@@ -52,6 +58,11 @@ function SliderBeginning(props) {
 				spaceBetween={6}
 				slidesPerView={1.6}
 				loop={true}
+				navigation={{
+					prevEl: navigationPrevRef.current,
+					nextEl: navigationNextRef.current,
+				}}
+				pagination={{clickable: true}}
 				centeredSlides={true}
 				onSlideChange={() => console.log("slide change")}
 				onSwiper={(swiper) => console.log(swiper)}
@@ -64,6 +75,12 @@ function SliderBeginning(props) {
 					);
 				})}
 			</Swiper>
+			<div className={"swiperSlidePrev"} ref={navigationPrevRef}>
+				<FontAwesomeIcon icon={faAngleRight} />
+			</div>
+			<div ref={navigationNextRef} className={"swiperSlideNext"}>
+				<FontAwesomeIcon icon={faAngleLeft} />
+			</div>
 		</div>
 	);
 }
