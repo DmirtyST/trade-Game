@@ -11,7 +11,7 @@ function ContactsItem() {
 				{footerData.slice(14, 17).map((e) => {
 					return (
 						<li key={e.id} className={styles.list}>
-							<a to={e.path}>{e.names}</a>
+							<a href={e.path}>{e.names}</a>
 						</li>
 					);
 				})}

@@ -62,10 +62,18 @@ function SliderBeginning(props) {
 					prevEl: navigationPrevRef.current,
 					nextEl: navigationNextRef.current,
 				}}
+				onSwiper={(swiper) => {
+					setTimeout(() => {
+						swiper.params.navigation.prevEl = navigationPrevRef.current;
+						swiper.params.navigation.nextEl = navigationNextRef.current;
+						swiper.navigation.destroy();
+						swiper.navigation.init();
+						swiper.navigation.update();
+					});
+				}}
 				pagination={{clickable: true}}
 				centeredSlides={true}
 				onSlideChange={() => console.log("slide change")}
-				onSwiper={(swiper) => console.log(swiper)}
 			>
 				{items.map((e) => {
 					return (
@@ -74,13 +82,14 @@ function SliderBeginning(props) {
 						</SwiperSlide>
 					);
 				})}
-			</Swiper>
-			<div className={"swiperSlidePrev"} ref={navigationPrevRef}>
+				<div className={"swiperSlidePrev"} ref={navigationPrevRef}>
 				<FontAwesomeIcon icon={faAngleRight} />
 			</div>
 			<div ref={navigationNextRef} className={"swiperSlideNext"}>
 				<FontAwesomeIcon icon={faAngleLeft} />
 			</div>
+			</Swiper>
+			
 		</div>
 	);
 }

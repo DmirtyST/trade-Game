@@ -1,6 +1,6 @@
 /** @format */
-import {basketСounterAdd, basketСounterRemove, totalPrice} from "../../../Store/Slice/addProducts";
-import {useDispatch, useSelector} from "react-redux";
+import {basketСounterAdd, basketСounterRemove} from "../../../Store/Slice/addProducts";
+import {useDispatch} from "react-redux";
 
 function BasketIncrease({game, styles}) {
 	const dispatch = useDispatch();

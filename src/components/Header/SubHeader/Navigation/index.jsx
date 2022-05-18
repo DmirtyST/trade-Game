@@ -1,12 +1,11 @@
 /** @format */
 
-import {useState} from "react";
 import {NavLink} from "react-router-dom";
 import {headerData} from "../../../../Data/data";
 
 /** @format */
 
-function Nav({styles, menu}) {
+function Nav({styles}) {
 	return (
 		<nav className={styles.subHeader_nav}>
 			<ul className={styles.list}>

@@ -9,7 +9,7 @@
    display: inline-block;
    position: absolute;
    z-index: 55;
-   top: 42%;
+   top: 50%;
    transform: translateY(-50%);
    cursor: pointer;
    width: 25px;
@@ -30,3 +30,29 @@ left: 15px;
 right: 15px;
 }
 
+.swiper-pagination-bullet{
+   border-radius: 0;
+   width: 22px;
+   height: 3px;
+   background: #FFFFFF;
+   visibility: hidden;
+   position: absolute;
+}
+
+
+
+@media (max-width:480px) {
+
+   .swiperSlideNext,.swiperSlidePrev{
+      visibility: hidden;
+      
+   }
+   .swiper-pagination-bullet{
+     
+     
+      visibility: visible;
+      position: relative;
+   }
+   
+
+}

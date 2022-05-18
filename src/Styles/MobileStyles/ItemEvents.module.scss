@@ -1,0 +1,47 @@
+.item{
+   
+   text-align: start;
+   width: calc(100% - 15px);
+  height: 400px;
+   position: relative;
+   z-index: 1;
+   text-align: start;
+   border-radius: 0px;
+   overflow: hidden;
+   display: flex;
+   align-items: flex-end;
+   margin-bottom: 50px;
+   
+.events_box{
+background-color: rgba(#2A2A2A, 0.8);
+padding: 22px 15px;
+width: 100%;
+}
+.events_description{
+   color: #FFFFFF;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 21px;
+   }
+
+.events_titleBox{
+      
+      margin-bottom: 10px;
+      
+.titleBox_title{
+font-size: 19px;
+font-weight: 700;
+line-height: 22px;
+color: #F9A43F;
+background: none;
+}
+
+.titleBox_subTitle{
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+color: #FFFFFF;
+}
+      
+   }
+}

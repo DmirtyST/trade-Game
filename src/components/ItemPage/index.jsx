@@ -1,7 +1,6 @@
 /** @format */
 import {useDispatch} from "react-redux";
-import {useNavigate} from "react-router-dom";
-import {addItems, nextPathGame} from "../../Store/Slice/addProducts";
+import {addItems} from "../../Store/Slice/addProducts";
 import ButtonAdd from "../ButtonAdd";
 import ButtonAddOne from "../ButtonAddOne";
 import styles from "./ItemPage.module.scss";

@@ -6,22 +6,102 @@
    font-size: 25px;
    z-index: 33;
    cursor: pointer;
+   padding: 0 15px;
 }
 
 
 
 .swiperProductsSlidePrev{
-right: 0px;
+right: -60px;
+
 }
 
 .swiperProductsSlideNext{
-left: 0px;
+left: -60px;
 
 }
 
 .SwiperProusctSlider{
    position: relative;
-   padding: 0 75px;
+   padding: 0 0px;
+}
+
+@media (max-width:1185px) {
+   .swiperProductsSlidePrev{
+      right: 10px;
+      
+      }
+      
+      .swiperProductsSlideNext{
+      left: 10px;
+      
+      }
+}
+
+@media (max-width:800px) {
+   .swiperProductsSlidePrev{
+      right: 0px;
+      
+      }
+      
+      .swiperProductsSlideNext{
+      left: 0px;
+      
+      }
 }
 
 
+@media (max-width:640px) {
+
+
+   .SwiperProusctSlider{
+      position: relative;
+      padding: 0 50px;
+   }
+   .swiperProductsSlidePrev{
+      right: -5px;
+      
+      }
+      
+      .swiperProductsSlideNext{
+      left: -5px;
+      
+      }
+}
+
+@media (max-width:446px) {
+
+
+   .SwiperProusctSlider{
+      position: relative;
+      padding: 0 35px;
+   }
+   .swiperProductsSlidePrev{
+      right: -7px;
+      
+      }
+      
+      .swiperProductsSlideNext{
+      left: -7px;
+      
+      }
+}
+
+
+@media (max-width:366px) {
+
+
+   .SwiperProusctSlider{
+      position: relative;
+      padding: 0 20px;
+   }
+   .swiperProductsSlidePrev{
+      right: -15px;
+      
+      }
+      
+      .swiperProductsSlideNext{
+      left: -15px;
+      
+      }
+}

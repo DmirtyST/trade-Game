@@ -3,7 +3,7 @@
 import ButtomCheckout from "../../ButtomCheckout";
 import ButtonAddOne from "../../ButtonAddOne";
 
-function BasketPagePrice({styles, game, cartTotalQuantity, cartTotalAmount}) {
+function BasketPagePrice({styles, cartTotalQuantity, cartTotalAmount}) {
 	return (
 		<div className={styles.BasketPagePrice}>
 			<div className={styles.containerPrice}>

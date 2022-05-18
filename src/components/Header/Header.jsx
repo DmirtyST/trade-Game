@@ -14,11 +14,13 @@ const Header = () => {
 	const toggleBurger = () => {
 		setActive(!active);
 		if (active === true) {
-			document.body.style.overflow = "auto";
+			document.body.style.overflowX = "hidden";
+			document.body.style.overflowY = "auto";
 		}
 
 		if (active === false) {
-			document.body.style.overflow = "hidden";
+			document.body.style.overflowY = "hidden";
+			document.body.style.overflowX = "hidden";
 		}
 	};
 	return (

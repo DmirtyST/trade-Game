@@ -21,15 +21,14 @@ function BasketPage() {
 	return (
 		<div className={styles.BasketPage}>
 			<Container>
-				<>
+				<div className={styles.row}>
 					{items.length > 0 ? <SectionTitle>Корзина</SectionTitle> : null}
-
 					<div className={styles.row}>
 						{items.length > 0 ? (
 							<>
 								{items.map((game) => {
 									return (
-										<div className={styles.item}>
+										<div key={game.id} className={styles.item}>
 											<div className={styles.box}>
 												<div className={styles.container_img}>
 													<div className={styles.image}>
@@ -46,16 +45,13 @@ function BasketPage() {
 										</div>
 									);
 								})}
-
-								{items.map((game) => {
-									return <BasketPagePrice cartTotalAmount={cartTotalAmount} cartTotalQuantity={cartTotalQuantity} game={game} styles={styles} />;
-								})}
 							</>
 						) : (
 							<div className={styles.BasketPageNull}>Корзина пустая</div>
 						)}
 					</div>
-				</>
+					{items.length > 0 ? <BasketPagePrice cartTotalAmount={cartTotalAmount} cartTotalQuantity={cartTotalQuantity} styles={styles} /> : null}
+				</div>
 			</Container>
 		</div>
 	);

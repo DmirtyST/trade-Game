@@ -2,8 +2,6 @@
 
 import "./index.scss";
 
-/** @format */
-
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
@@ -15,7 +13,6 @@ import {totalPrice} from "./Store/Slice/addProducts";
 store.dispatch(totalPrice());
 ReactDOM.render(
 	<Provider store={store}>
-	
 		<App />
 	</Provider>,
 	document.getElementById("root"),

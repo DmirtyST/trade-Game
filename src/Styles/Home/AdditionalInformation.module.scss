@@ -187,7 +187,23 @@ line-height: 19px;
    }
 
 }
+@media (max-width:572px) {
 
+   .information_item{
+      width: calc(100% - 0px);
+      margin-bottom: 20px;
+      img{
+         
+        
+         object-position: top;
+      }
+     
+      &:nth-child(2),&:last-child{
+         visibility: hidden;
+         position: absolute;
+      }
+   }
+}
 
 @media (max-width:335px) {
    

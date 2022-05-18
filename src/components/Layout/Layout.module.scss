@@ -42,6 +42,7 @@ li,a{
 
    .page{
       flex: 1 1 auto;
+      min-height: calc(100vh - 148.4px);
    }
    
 }

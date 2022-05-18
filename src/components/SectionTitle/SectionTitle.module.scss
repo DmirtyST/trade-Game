@@ -9,15 +9,15 @@ text-align: start;
 }
 
 
-@media (max-width:475px) {
+@media (max-width:540px) {
    .sectionTitle{
-  
+      text-align: center;
       font-size: 22px;
       font-weight: 700;
       line-height: 37px;
       color: #363636;
       margin-bottom: 20px;
-      text-align: start;
+     
       }
       
 }

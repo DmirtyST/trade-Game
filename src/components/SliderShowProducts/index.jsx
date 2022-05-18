@@ -22,16 +22,18 @@ function SliderShowProducts(props) {
 				slidesPerView={4}
 				loop={true}
 				onSlideChange={() => console.log("slide change")}
-				onSwiper={(swiper) => console.log(swiper)}
 				navigation={{
 					prevEl: navigationPrevRef.current,
 					nextEl: navigationNextRef.current,
 				}}
-				onInit={(swiper) => {
-					swiper.params.navigation.prevEl = navigationPrevRef.current;
-					swiper.params.navigation.nextEl = navigationNextRef.current;
-					swiper.navigation.init();
-					swiper.navigation.update();
+				onSwiper={(swiper) => {
+					setTimeout(() => {
+						swiper.params.navigation.prevEl = navigationPrevRef.current;
+						swiper.params.navigation.nextEl = navigationNextRef.current;
+						swiper.navigation.destroy();
+						swiper.navigation.init();
+						swiper.navigation.update();
+					});
 				}}
 				breakpoints={{
 					200: {

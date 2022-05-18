@@ -31,8 +31,8 @@ function Search() {
 				<CloseSearch search={search} resetSearch={resetSearch} styles={styles} />
 			</div>
 
-			{search != 0 ? (
-				<div className={styles.search__result}>
+			{search !== 0 ? (
+				<ul className={styles.search__result}>
 					{search.slice(0, 1).map((game) => {
 						return (
 							<li className={styles.result_item}>
@@ -43,7 +43,7 @@ function Search() {
 							</li>
 						);
 					})}
-				</div>
+				</ul>
 			) : null}
 		</div>
 	);

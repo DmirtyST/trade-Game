@@ -1,0 +1,12 @@
+.SwiperEvents{
+  position: absolute;
+  visibility: hidden;
+}
+
+@media (max-width:930px) {
+   .SwiperEvents{
+      position: relative;
+      visibility: visible;
+    }
+   
+}

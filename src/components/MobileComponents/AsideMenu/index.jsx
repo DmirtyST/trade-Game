@@ -18,15 +18,15 @@ function AsideMenu({active, toggleBurger}) {
 					{headerData.navigatioHeader.map((e) => {
 						if (e.names === "Warhammer") {
 							return (
-								<>
-									<li key={e.id} onClick={handleShowMenu} className={activeList === false ? styles.AsideMenu_list_list : styles.AsideMenu_list_list + " " + styles.AsideMenu_list_listActive}>
+								<li key={e.id}>
+									<li onClick={handleShowMenu} className={activeList === false ? styles.AsideMenu_list_list : styles.AsideMenu_list_list + " " + styles.AsideMenu_list_listActive}>
 										Warhammer
 										<i>
 											<FontAwesomeIcon icon={faChevronRight} />
 										</i>
 									</li>
 									<DropMenu toggleBurger={toggleBurger} activeList={activeList} styles={styles} active={active} />
-								</>
+								</li>
 							);
 						}
 						return (

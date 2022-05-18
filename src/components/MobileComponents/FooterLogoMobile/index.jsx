@@ -13,7 +13,7 @@ function FooterMobileItem() {
 			<ul className={styles.FooterMobileItem_list}>
 				{footerData.slice(17, 20).map((e) => {
 					return (
-						<li>
+						<li key={e.id}>
 							<NavLink to={e.path}>
 								<img src={e.pathImg} alt="icons" />
 							</NavLink>

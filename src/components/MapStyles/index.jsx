@@ -1,7 +1,7 @@
 /** @format */
 import style from "./Map.module.scss";
 import {GoogleMap, Marker} from "@react-google-maps/api";
-import React, {useState} from "react";
+import React from "react";
 
 import {defaultTheme} from "./Theam";
 

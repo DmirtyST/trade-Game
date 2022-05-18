@@ -1,7 +1,7 @@
 /** @format */
-
+import styles from "./Container.module.scss";
 function ContainerBig({children}) {
-	return <div style={{maxWidth: "1250px", margin: "0 auto", padding: "0 15px"}}>{children}</div>;
+	return <div className={styles.container}>{children}</div>;
 }
 
 export default ContainerBig;
