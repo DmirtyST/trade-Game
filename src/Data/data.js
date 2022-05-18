@@ -114,7 +114,7 @@ export const homeData = {
 	sliderBeginningData: [
 		{id: uuidv4(), imagePath: "./Image/slide1Begin.png", title: "Magic: the Gathering", sub: "Самая популярная карточная игра", path: "/"},
 		{id: uuidv4(), imagePath: "./Image/slide2Begin.svg", title: "Warhmmer games", sub: "Настольная игра варгейм", path: "/"},
-		{id: uuidv4(), imagePath: "./Image/slide3Begin.svg", title: "Весь католог ", sub: "Попробуй игры разных жанров", path: "/"},
+		{id: uuidv4(), imagePath: "./Image/slide3Begin.png", title: "Весь католог ", sub: "Попробуй игры разных жанров", path: "/"},
 	],
 	catalogData: {
 		firstItem: [{id: 1, imagePath: "./Image/catalog1.png", title: "Настольные игры", path: "/"}],
