@@ -32,7 +32,7 @@ function ItemPage(game) {
 
 				<div className={styles.title}>{title}</div>
 				<div className={styles.boxPrice}>
-					<div className={styles.price}>{price}грн</div>
+					<div className={styles.price}>{price} грн</div>
 				</div>
 			</div>
 			<ButtonAdd handleaddProducts={handleaddProducts} game={game} />

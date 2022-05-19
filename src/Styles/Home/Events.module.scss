@@ -90,7 +90,8 @@ line-height: 21px;
    .row{
       position: absolute;
       visibility: hidden;
-         display: flex;
+      display: none;
+       
          height: 395px;
          justify-content: space-between;
          flex-wrap: wrap;

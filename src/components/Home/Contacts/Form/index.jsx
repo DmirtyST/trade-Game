@@ -15,7 +15,7 @@ function Form({styles}) {
 			<div className={styles.form_controll}>
 				<label htmlFor="">
 					<span className={styles.form_label}>Ваш телефон</span>
-					<input type="text" placeholder="+7 ___ _______" />
+					<input type="text" placeholder="+3 ___ _______" />
 				</label>
 			</div>
 			<div className={styles.form_controll}>

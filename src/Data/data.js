@@ -259,22 +259,22 @@ export const homeData = {
 	},
 	contactsData: {
 		infoContacts: [
-			{id: 1, text: "+7 (495) 911-10-11", icon: "./Image/iconContacts1.svg", path: "tel:+74959111011", title: "Телефон:"},
-			{id: 2, text: "msk@magicgoldfish.ru", icon: "./Image/iconContacts2.svg", path: "mailto:msk@magicgoldfish.ru", title: "E-mail:"},
-			{id: 3, text: "г. Москва ст.м. Таганская (кольцевая) Малый Дровяной переулок 6", icon: "./Image/iconContacts3.svg", title: "Адрес:"},
+			{id: 1, text: "+38 (066) 38 44 645", icon: "./Image/iconContacts1.svg", path: "tel:+380663844645", title: "Телефон:"},
+			{id: 2, text: "endless1995@ukr.net", icon: "./Image/iconContacts2.svg", path: "mailto:msk@magicgoldfish.ru", title: "E-mail:"},
+			{id: 3, text: "г. Харьков , Познанская 12", icon: "./Image/iconContacts3.svg", title: "Адрес:"},
 			{id: 4, text: "11:00-23:00 (ежедневно)", icon: "./Image/iconContacts4.svg", title: "Режим работы клуба:"},
 		],
 
 		formContacts: [
 			{id: 1, label: "Ваше имя", place: "Имя"},
-			{id: 2, label: "Ваш телефон", place: "+7 ___ _______"},
+			{id: 2, label: "Ваш телефон", place: "+3 ___ _______"},
 			{id: 3, label: "Ваш комментарий", place: "Комментарий"},
 		],
 	},
 };
 
 export const footerData = [
-	{id: uuidv4(), pathImg: "./Image/logo.svg", text: "г. Москва ст.м. Таганская Малый Дровяной переулок 6"},
+	{id: uuidv4(), pathImg: "./Image/logo.svg", text: "г. Харьков , Познанкаская 16"},
 
 	{id: uuidv4(), names: "Warhammer 40000", path: "/"},
 	{id: uuidv4(), names: "Настольные игры", path: "/"},
@@ -293,8 +293,8 @@ export const footerData = [
 	{id: uuidv4(), names: "Гарантия и возврат", path: "/"},
 
 	{id: uuidv4(), names: "Заказать звонок", path: "/"},
-	{id: uuidv4(), names: "+7 (495) 911-10-11", path: "tel:+74959111011"},
-	{id: uuidv4(), names: "msk@magicgoldfish.ru", path: "mailto:msk@magicgoldfish.ru"},
+	{id: uuidv4(), names: "+38 (066) 38 44 645", path: "tel:+380663844645"},
+	{id: uuidv4(), names: "endless1995@ukr.net", path: "endless1995@ukr.net"},
 	{id: uuidv4(), pathImg: "./Image/icons_inst.svg", path: "/"},
 	{id: uuidv4(), pathImg: "./Image/icon_vk.svg", path: "/"},
 	{id: uuidv4(), pathImg: "./Image/icon_fb.svg", path: "/"},

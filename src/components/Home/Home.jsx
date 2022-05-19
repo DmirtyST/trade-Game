@@ -1,5 +1,8 @@
 /** @format */
+
+import BasketRigth from "../BasketRigth";
 import Container from "../Container/Index";
+
 import About from "./About";
 import AdditionalInformation from "./AdditionalInformation";
 import Catalog from "./Catalog";
@@ -13,6 +16,7 @@ import SwipeProduct from "./SwiperProducts";
 function Home() {
 	return (
 		<div className={styles.home}>
+			<BasketRigth styles={styles} />
 			<SwipeProduct styles={styles} />
 			<Container>
 				<Catalog styles={styles} />

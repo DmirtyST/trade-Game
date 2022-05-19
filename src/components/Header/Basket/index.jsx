@@ -3,8 +3,8 @@
 import {useSelector} from "react-redux";
 import {NavLink} from "react-router-dom";
 import AmountBasket from "./Amount";
-
-const Basket = ({styles}) => {
+import styles from "../../../Styles/HeaderStyles/BasketHeader.module.scss";
+const Basket = () => {
 	const selec = useSelector((state) => state.cart.addItem);
 
 	return (

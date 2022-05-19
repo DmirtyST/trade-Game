@@ -3,8 +3,8 @@
 import {useJsApiLoader} from "@react-google-maps/api";
 import {MapStyles} from "../MapStyles";
 const center = {
-	lat: 55.74575238417996,
-	lng: 37.65634133907149,
+	lat: 49.99976694141904,
+	lng: 36.35344301171797,
 };
 
 const libraries = ["places"];

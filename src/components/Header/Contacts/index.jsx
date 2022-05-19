@@ -4,7 +4,7 @@ function Contacts() {
 	return (
 		<div className={styles.contacts}>
 			<img src="./Image/icon_tel.svg" alt="" />
-			<a href="tel:+74959111911">+7 (495) 911-10-11</a>
+			<a href="tel:+380663844645">+38 (066) 38 44 645</a>
 		</div>
 	);
 }

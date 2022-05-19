@@ -13,6 +13,7 @@ import NotPages from "./components/NoPages";
 function App() {
 	return (
 		<BrowserRouter>
+			<div id="ScrollTop"></div>
 			<ScrollToTop />
 			<ToastContainer />
 			<Routes>

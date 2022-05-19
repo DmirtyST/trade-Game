@@ -13,11 +13,11 @@ function SubHeader() {
 	let handleActiveMenu = () => {
 		setMenu(!menu);
 		if (menu === true) {
-			document.body.style.overflow = "auto";
+			document.body.style.overflowY = "scroll";
 		}
 
 		if (menu === false) {
-			document.body.style.overflow = "hidden";
+			document.body.style.overflowY = "hidden";
 		}
 	};
 	return (

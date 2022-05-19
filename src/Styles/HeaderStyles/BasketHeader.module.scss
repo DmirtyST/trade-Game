@@ -1,0 +1,21 @@
+.basket{
+   width: 35px;
+   height: 35px;
+   margin-left: 0px;
+   position: relative;
+ 
+
+   .AmountBasket{
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     right: 0;
+     top: 0;
+     background: #F9A43F;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     border-radius: 50%;
+   }
+ }
